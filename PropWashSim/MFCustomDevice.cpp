@@ -62,9 +62,9 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
         Do something which is required to setup your custom device
     ********************************************************************************** */
 
-    char   *params, *p = NULL;
+    //char   *params, *p = NULL;
     char    parameter[MEMLEN_STRING_BUFFER];
-    uint8_t _pin1, _pin2, _pin3;
+    //uint8_t _pin1, _pin2, _pin3;
 
     /* **********************************************************************************
         Read the Type from the EEPROM, copy it into a buffer and evaluate it
@@ -90,7 +90,7 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
             Read the pins from the EEPROM, copy them into a buffer
             If you have set '"isI2C": true' in the device.json file, the first value is the I2C address
         ********************************************************************************************** */
-        getStringFromEEPROM(adrPin, parameter);
+        //getStringFromEEPROM(adrPin, parameter);
         /* **********************************************************************************************
             Split the pins up into single pins. As the number of pins could be different between
             multiple devices, it is done here.
@@ -105,7 +105,7 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
         /* **********************************************************************************
             Read the configuration from the EEPROM, copy it into a buffer.
         ********************************************************************************** */
-        getStringFromEEPROM(adrConfig, parameter);
+        //getStringFromEEPROM(adrConfig, parameter);
         /* **********************************************************************************
             Split the config up into single parameter. As the number of parameters could be
             different between multiple devices, it is done here.
@@ -114,13 +114,14 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
             For most customer devices it is not required.
             In this case just delete the following
         ********************************************************************************** */
+        /*
         uint16_t Parameter1;
         char    *Parameter2;
         params     = strtok_r(parameter, "|", &p);
         Parameter1 = atoi(params);
         params     = strtok_r(NULL, "|", &p);
         Parameter2 = params;
-
+        */
         /* **********************************************************************************
             Next call the constructor of your custom device
             adapt it to the needs of your constructor
