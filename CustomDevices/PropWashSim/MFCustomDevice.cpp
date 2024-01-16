@@ -62,9 +62,9 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
         Do something which is required to setup your custom device
     ********************************************************************************** */
 
-    char   *params, *p = NULL;
+    // char   *params, *p = NULL;
     char    parameter[MEMLEN_STRING_BUFFER];
-    uint8_t _pin1, _pin2, _pin3;
+    // uint8_t _pin1, _pin2, _pin3;
 
     /* **********************************************************************************
         Read the Type from the EEPROM, copy it into a buffer and evaluate it
@@ -74,8 +74,9 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
     getStringFromEEPROM(adrType, parameter);
     if (strcmp(parameter, "PROPWASHSIM_KAP140") == 0)
         _customType = MY_CUSTOM_DEVICE_1;
-    if (strcmp(parameter, "PROPWASHSIM_KAP280") == 0)
-        _customType = MY_CUSTOM_DEVICE_2;
+
+    // if (strcmp(parameter, "PROPWASHSIM_KAP280") == 0)
+    //     _customType = MY_CUSTOM_DEVICE_2;
 
     if (_customType == MY_CUSTOM_DEVICE_1) {
         /* **********************************************************************************
@@ -114,12 +115,12 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
             For most customer devices it is not required.
             In this case just delete the following
         ********************************************************************************** */
-        uint16_t Parameter1;
-        char    *Parameter2;
-        params     = strtok_r(parameter, "|", &p);
-        Parameter1 = atoi(params);
-        params     = strtok_r(NULL, "|", &p);
-        Parameter2 = params;
+        // uint16_t Parameter1;
+        // char    *Parameter2;
+        // params     = strtok_r(parameter, "|", &p);
+        // Parameter1 = atoi(params);
+        // params     = strtok_r(NULL, "|", &p);
+        // Parameter2 = params;
 
         /* **********************************************************************************
             Next call the constructor of your custom device
@@ -168,9 +169,10 @@ void MFCustomDevice::update()
     ********************************************************************************** */
     if (_customType == MY_CUSTOM_DEVICE_1) {
         _mydevice->update();
-    } else if (_customType == MY_CUSTOM_DEVICE_2) {
-       _mydevice->update();
-    }
+    } 
+    // else if (_customType == MY_CUSTOM_DEVICE_2) {
+    //    _mydevice->update();
+    // }
 }
 
 /* **********************************************************************************
@@ -184,7 +186,8 @@ void MFCustomDevice::set(int16_t messageID, char *setPoint)
 
     if (_customType == MY_CUSTOM_DEVICE_1) {
         _mydevice->set(messageID, setPoint);
-    } else if (_customType == MY_CUSTOM_DEVICE_2) {
-        _mydevice->set(messageID, setPoint);
     }
+    // else if (_customType == MY_CUSTOM_DEVICE_2) {
+    //     _mydevice->set(messageID, setPoint);
+    // }
 }
