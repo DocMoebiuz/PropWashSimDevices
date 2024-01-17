@@ -34,8 +34,7 @@
     "Info": {
       "CanInstallFirmware": true,
       "CanResetBoard": true,
-      "DelayAfterFirmwareUpdate": 0,
-      "FirmwareBaseName": "mobiflight_template_mega",
+      "FirmwareBaseName": "propwashsim_kap140_mega",
       "FirmwareExtension": "hex",
       "LatestFirmwareVersion": "0.0.1",
       "FriendlyName": "PropWashSim KAP140",
@@ -45,10 +44,10 @@
         "PROPWASHSIM_KAP140"
       ],
       "Community": {
-        "Project": "Your Project",
-        "Website": "https://YourWebsite.com",
-        "Docs": "https://YourWebsite.com",
-        "Support": "https://YourWebsite.com"
+        "Project": "PropWashSim KAP140",
+        "Website": "https://www.propwashsim.com/store/pws140-autopilot",
+        "Docs": "https://www.propwashsim.com/downloads",
+        "Support": "https://www.propwashsim.com/about-us"
       }
     },
     "ModuleLimits": {
@@ -63,7 +62,7 @@
       "MaxShifters": 6,
       "MaxSteppers": 10,
       "MaxInputMultiplexer": 6,
-      "MaxCustomDevices": 5
+      "MaxCustomDevices": 1
     },
     "Pins": [
       {
