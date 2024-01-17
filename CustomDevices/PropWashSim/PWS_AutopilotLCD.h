@@ -37,10 +37,19 @@ class PWS_AutopilotLCD {
          * 0xE 0.616 × VDD
          * 0xF 0.600 × VDD
          */
-        void begin(uint8_t IVA=0);
+        void begin(uint8_t i2cAdress, uint8_t IVA=0);
         void prompt(enum PROMPT display);
         void annunciator(enum ANNUNCIATOR, bool);
         void digits(int32_t num);
-        void lampTest(int ms);
+        void lampTest(bool start_lamptest);
+        void set(int16_t messageID, char *setPoint);
+        void detach();
+
+    private:
+        bool     _initialized = false;
+        uint8_t  _i2cAdress;
+        uint16_t _duration_lamptest = 0;
+        uint32_t _start_lamptest_ms = false;
+        bool     _lamptest_started = false;
 };
 #endif
