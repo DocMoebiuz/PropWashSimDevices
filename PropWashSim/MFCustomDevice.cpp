@@ -91,7 +91,7 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
             Read the pins from the EEPROM, copy them into a buffer
             If you have set '"isI2C": true' in the device.json file, the first value is the I2C address
         ********************************************************************************************** */
-        getStringFromEEPROM(adrPin, parameter);
+        //getStringFromEEPROM(adrPin, parameter);
         /* **********************************************************************************************
             Split the pins up into single pins. As the number of pins could be different between
             multiple devices, it is done here.
@@ -106,7 +106,7 @@ void MFCustomDevice::attach(uint16_t adrPin, uint16_t adrType, uint16_t adrConfi
         /* **********************************************************************************
             Read the configuration from the EEPROM, copy it into a buffer.
         ********************************************************************************** */
-        getStringFromEEPROM(adrConfig, parameter);
+        //getStringFromEEPROM(adrConfig, parameter);
         /* **********************************************************************************
             Split the config up into single parameter. As the number of parameters could be
             different between multiple devices, it is done here.
