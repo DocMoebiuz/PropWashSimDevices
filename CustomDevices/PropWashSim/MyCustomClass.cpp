@@ -57,22 +57,7 @@ void MyCustomClass::set(int16_t messageID, char *setPoint)
     // do something according your messageID
     switch (messageID) {
     case -1:
-        _lcd->prompt(B1_CLR);
-        _lcd->prompt(B2_CLR);
-        _lcd->prompt(B3_CLR);
-        _lcd->prompt(B4_CLR);
-        _lcd->annunciator(AN_AP, false);
-        _lcd->annunciator(AN_YD, false);
-        _lcd->annunciator(AN_L_ARM, false);
-        _lcd->annunciator(AN_R_ARM, false);
-        _lcd->annunciator(AN_DOWN, false);
-        _lcd->annunciator(AN_PT, false);
-        _lcd->annunciator(AN_UP, false);
-        _lcd->annunciator(AN_ALERT, false);
-        _lcd->annunciator(AN_FPM, false);
-        _lcd->annunciator(AN_FT, false);
-        _lcd->annunciator(AN_HPA, false);
-        _lcd->annunciator(AN_INHG, false);
+        _lcd->clear();
         break;
 
     case -2:

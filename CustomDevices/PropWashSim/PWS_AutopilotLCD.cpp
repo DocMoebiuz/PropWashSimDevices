@@ -37,6 +37,12 @@ PWS_AutopilotLCD::lampTest(int ms)
 	}
 	Wire.endTransmission();
 	delay(ms);
+	clear();
+}
+
+void 
+PWS_AutopilotLCD::clear() 
+{
 	Wire.beginTransmission(0x3F);
 	Wire.write(0);
 	for (int i = 0; i < 22; i++) {

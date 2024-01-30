@@ -42,5 +42,6 @@ class PWS_AutopilotLCD {
         void annunciator(enum ANNUNCIATOR, bool);
         void digits(int32_t num);
         void lampTest(int ms);
+        void clear();
 };
 #endif
