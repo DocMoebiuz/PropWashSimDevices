@@ -9,7 +9,7 @@
 enum PROMPT {B1_HDG, B1_AP, B1_NAV, B1_ROL, B1_APR, B1_REV, B1_CLR,
             B2_ALT, B2_PFT, B2_VS, B2_GS, B2_CLR,
             B3_REV, B3_NAV, B3_APR, B3_GS, B3_CLR,
-            B4_ALT, B4_CLR};
+            B4_ALT, B4_GS, B4_CLR};
 enum ANNUNCIATOR {AN_AP, AN_YD, AN_L_ARM, AN_R_ARM, AN_DOWN, AN_PT, AN_UP, AN_ALERT, AN_FPM, AN_FT, AN_HPA, AN_INHG};
 
 class PWS_AutopilotLCD {
@@ -42,6 +42,6 @@ class PWS_AutopilotLCD {
         void annunciator(enum ANNUNCIATOR, bool);
         void digits(int32_t num);
         void lampTest(int ms);
-        void clear();
+void clear();
 };
 #endif

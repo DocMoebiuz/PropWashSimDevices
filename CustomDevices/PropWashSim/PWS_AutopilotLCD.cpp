@@ -281,10 +281,19 @@ PWS_AutopilotLCD::prompt(enum PROMPT display)
 	  case B4_ALT:
 		Wire.beginTransmission(0x3F);
 		Wire.write(14);
-		Wire.write(0xE0);						//D17
-		Wire.write(0x00 | 0x00);				//D16 | D17
-		Wire.write(0xE0 | 0x0B);				//D15 | D16
-		Wire.write(0xE8);						//D15
+		Wire.write(0xE0);						//L14 D17
+		Wire.write(0x00 | 0x00);				//L15 D16 | D17
+		Wire.write(0xC0 | 0x0B);				//L16 D15 | D16
+		Wire.write(0xE8);						//L17 D15
+		Wire.endTransmission();
+		break;
+	  case B4_GS:
+		Wire.beginTransmission(0x3F);
+		Wire.write(14);
+		Wire.write(0x84);						//L14 D17
+		Wire.write(0xB0 | 0x0D);				//L15 D16 | D17
+		Wire.write(0x00 | 0x0B);				//L16 D15 | D16
+		Wire.write(0x00);						//L17 D15
 		Wire.endTransmission();
 		break;
 	}

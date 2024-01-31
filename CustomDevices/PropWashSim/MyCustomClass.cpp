@@ -103,6 +103,7 @@ void MyCustomClass::set(int16_t messageID, char *setPoint)
     // Set B4 prompt
     case 5:        
         if (strcmp(setPoint, "ALT") == 0) _lcd->prompt(B4_ALT); else
+        if (strcmp(setPoint, "GS") == 0) _lcd->prompt(B4_GS); else
         if (strcmp(setPoint, "CLR") == 0) _lcd->prompt(B4_CLR); else
         if (numberData==0) _lcd->prompt(B4_CLR);
         break;
