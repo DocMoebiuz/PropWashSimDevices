@@ -79,6 +79,7 @@ void MyCustomClass::set(int16_t messageID, char *setPoint)
         if (strcmp(setPoint, "ROL") == 0) _lcd->prompt(B1_ROL); else
         if (strcmp(setPoint, "APR") == 0) _lcd->prompt(B1_APR); else
         if (strcmp(setPoint, "REV") == 0) _lcd->prompt(B1_REV); else
+        if (strcmp(setPoint, "GPS") == 0) _lcd->prompt(B1_GPS); else
         if (strcmp(setPoint, "CLR") == 0) _lcd->prompt(B1_CLR); else
         if (numberData==0) _lcd->prompt(B1_CLR);
         break;
@@ -97,6 +98,7 @@ void MyCustomClass::set(int16_t messageID, char *setPoint)
         if (strcmp(setPoint, "NAV") == 0)  _lcd->prompt(B3_NAV); else
         if (strcmp(setPoint, "APR") == 0) _lcd->prompt(B3_APR); else
         if (strcmp(setPoint, "GS") == 0) _lcd->prompt(B3_GS); else
+        if (strcmp(setPoint, "GPS") == 0) _lcd->prompt(B3_GPS); else
         if (strcmp(setPoint, "CLR") == 0) _lcd->prompt(B3_CLR); else
         if (numberData==0) _lcd->prompt(B3_CLR);
         break;
