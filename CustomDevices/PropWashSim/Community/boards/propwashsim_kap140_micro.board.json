@@ -83,19 +83,22 @@
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 4
+      "Pin": 4,
+      "Name": "ARM"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": true,
-      "Pin": 5
+      "Pin": 5,
+      "Name": "DOWN"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": true,
-      "Pin": 6
+      "Pin": 6,
+      "Name": "NAV"
     },
     {
       "isAnalog": false,
@@ -107,19 +110,36 @@
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 8
+      "Pin": 8,
+      "Name":"HDG"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": true,
-      "Pin": 9
+      "Pin": 9,
+      "Name": "REV"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": true,
-      "Pin": 10
+      "Pin": 10,
+      "Name": "ALT"
+    },
+    {
+      "isAnalog": true,
+      "isI2C": false,
+      "isPWM": true,
+      "Pin": 12,
+      "Name": "APR"
+    },
+    {
+      "isAnalog": true,
+      "isI2C": false,
+      "isPWM": true,
+      "Pin": 13,
+      "Name": "UP"
     },
     {
       "isAnalog": false,
@@ -144,7 +164,7 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 18,
-      "Name": "A0"
+      "Name": "ARM LED"
     },
     {
       "isAnalog": true,
@@ -165,7 +185,21 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 21,
-      "Name": "A3"
+      "Name": "EncSwitch"
+    },
+    {
+      "isAnalog": true,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 30,
+      "Name": "AP"
+    },
+    {
+      "isAnalog": true,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 31,
+      "Name": "BARO"
     }
   ]
 }
