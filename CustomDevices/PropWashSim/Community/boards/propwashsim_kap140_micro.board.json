@@ -171,31 +171,45 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 19,
-      "Name": "A1"
+      "Name": "Enc2a"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 20,
-      "Name": "A2"
+      "Name": "Enc2a"
     },
     {
-      "isAnalog": true,
+      "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 21,
       "Name": "EncSwitch"
     },
     {
-      "isAnalog": true,
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 22,
+      "Name": "Enc1a"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 23,
+      "Name": "Enc1b"
+    },
+    {
+      "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 30,
       "Name": "AP"
     },
     {
-      "isAnalog": true,
+      "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 31,
