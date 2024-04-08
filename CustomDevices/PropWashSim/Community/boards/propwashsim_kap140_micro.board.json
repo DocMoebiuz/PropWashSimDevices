@@ -178,7 +178,7 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 20,
-      "Name": "Enc2a"
+      "Name": "Enc2b"
     },
     {
       "isAnalog": false,
