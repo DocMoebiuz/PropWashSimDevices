@@ -42,12 +42,12 @@
   },
   "ModuleLimits": {
     "MaxAnalogInputs": 9,
-    "MaxButtons": 18,
+    "MaxButtons": 26,
     "MaxEncoders": 9,
     "MaxInputShifters": 6,
     "MaxLcdI2C": 0,
     "MaxLedSegments": 6,
-    "MaxOutputs": 18,
+    "MaxOutputs": 26,
     "MaxServos": 8,
     "MaxShifters": 6,
     "MaxSteppers": 0,
@@ -59,25 +59,29 @@
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 0
+      "Pin": 0,
+      "Name": "D0/unused"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 1
+      "Pin": 1,
+      "Name": "D1/Unused"
     },
     {
       "isAnalog": false,
       "isI2C": true,
       "isPWM": false,
-      "Pin": 2
+      "Pin": 2,
+      "Name": "SDA"
     },
     {
       "isAnalog": false,
       "isI2C": true,
       "isPWM": true,
-      "Pin": 3
+      "Pin": 3,
+      "Name": "SCL"
     },
     {
       "isAnalog": true,
@@ -104,7 +108,8 @@
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 7
+      "Pin": 7,
+      "Name": "D7/Unused"
     },
     {
       "isAnalog": true,
@@ -128,6 +133,13 @@
       "Name": "ALT"
     },
     {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 11,
+      "Name": "D11/Unused"
+    },
+    {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": true,
@@ -145,19 +157,29 @@
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 14
+      "Pin": 14,
+      "Name": "MISO"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 15
+      "Pin": 15,
+      "Name": "SCK"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
-      "Pin": 16
+      "Pin": 16,
+      "Name": "MOSI"
+    },
+    {
+      "isAnalog": true,
+      "isI2C": false,
+      "isPWM": true,
+      "Pin": 17,
+      "Name": "D17/Unused"
     },
     {
       "isAnalog": true,
